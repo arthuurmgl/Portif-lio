@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal - Arthur</title>
+    <style>
+      :root {
+     background: linear-gradient(135deg, 
+                          #080E1A 0%, 
+                          #131D38 50%, 
+                         #A5B3D8 100%);
+        --light-color: #f8f9fa;
+        --dark-color: #212529;
+        --gray-color: #6c757d;
+        --success-color: #28a745;
+      }
+       header {
+    background: linear-gradient(135deg, 
+                #080E1A 50%, 
+                #131D38 10%, 
+                #A5B3D8 100%);
+    color: white;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    position: relative;
+  }
+      body {
+        font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        position: relative;
+        color: var(--dark-color);
+      }
+      
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+          linear-gradient(rgba(0, 68, 102, 0.100), rgba(0, 68, 102, 0.85)),
+          url('https://i.pinimg.com/736x/0e/cc/1c/0ecc1c5c5b00daaaffda0938a6ec5894.jpg') center/cover no-repeat;
+        z-index: -1;
+      }
+      
+      header, nav, main, footer {
+        padding: 1.5rem;
+        margin: auto;
+        max-width: 1200px;
+        position: relative;
+      }
+      
+      header {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+        padding: 3rem 1.5rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 0;
+      }
+      
+    
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: var(--secondary-color);
+        padding: 1rem;
+      }
+      
+      nav a {
+        margin: 0 1.5rem;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+      }
+      
+      nav a:focus, nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        text-decoration: none;
+      }
+      
+      main {
+        padding: 2rem 1.5rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        margin: 2rem auto;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      section {
+        margin-bottom: 3rem;
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+      }
+      
+      /* ... (mantenha o restante do seu CSS original) ... */
+    </style>
+  </head>
+  <body>    
+    <header>
+      <h1>Arthur - Portfólio</h1>
+      <p>Estudante de T.I com foco em acessibilidade e usabilidade web</p>
+    </header>
+    
+    <nav aria-label="Menu Principal">
+      <a href="#sobre">Sobre Mim</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    
+    <main>
+      <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+          <div style="flex: 1; min-width: 300px;">
+            <p>Olá! Meu nome é Arthur, sou estudante de ADS e estou feliz por criar experiências web acessíveis e usáveis para todos.</p>
+          </div>
+          <img src="https://via.placeholder.com/300" alt="Foto de perfil de Arthur" class="profile-img">
+        </div>
+      </section>
+      
+      <!-- Restante do seu conteúdo -->
+    </main>
+  </body>
+</html>
